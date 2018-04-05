@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <Resources cachingAllowed="false" />
+    <Resource name="jdbc/adam" auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3307/aperture_photography?autoReconnect=true"
+              username="adamr" password="FeelsGoodMan"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              logAbandoned="true" removeAbandoned="true"
+              removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+
+    <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="adamr"
+           connectionPassword="FeelsGoodMan" connectionURL="jdbc:mysql://localhost:3307/aperture_photography"
+           debug="99" driverName="com.mysql.jdbc.Driver"
+           roleNameCol="rolename" userCredCol="password" userNameCol="username"
+           userRoleTable="tomcat_roles" userTable="tomcat_users"/>
+
+</Context>
