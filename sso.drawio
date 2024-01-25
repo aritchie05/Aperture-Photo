@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-25T03:38:44.903Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="uO73wjnofwqzQvgzSVsC" version="23.0.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-01-25T03:47:19.079Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="kogYwD-QkWGiAAV9-WXY" version="23.0.1" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1304" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -41,12 +41,6 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="181.99899999999974" y="1065" as="sourcePoint" />
             <mxPoint x="182.2" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BegDkbqegO8Gi961gScc-69" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.712;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="BegDkbqegO8Gi961gScc-64">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="412.0019999999999" y="1070" as="sourcePoint" />
-            <mxPoint x="412.21" y="5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BegDkbqegO8Gi961gScc-83" value="IdP receives the email address and verifies whether the user is logged in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="BegDkbqegO8Gi961gScc-64">
@@ -196,6 +190,12 @@
         <mxCell id="BegDkbqegO8Gi961gScc-87" value="&lt;b&gt;SP Initiated SSO Process (SAML2, OIDC)&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="288" y="20" width="250" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="BegDkbqegO8Gi961gScc-69" value="" style="endArrow=none;html=1;rounded=0;entryX=0.695;entryY=0;entryDx=0;entryDy=0;exitX=0.697;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="BegDkbqegO8Gi961gScc-64" target="BegDkbqegO8Gi961gScc-64">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530.002" y="1145" as="sourcePoint" />
+            <mxPoint x="530.21" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -204,6 +204,192 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-1" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="118" y="75" width="591" height="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-2" value="&lt;b&gt;Curinos Application&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="31" y="5" width="119" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-3" value="&lt;b&gt;Curinos Okta (Service Provider)&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="242" y="5" width="108" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-4" value="&lt;b&gt;Client SSO Platform (Identity Provider)&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="441" y="5" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-5" value="User navigates to IdP URL (unique per client)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="444" y="65" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-5" target="wnAe5tIJQnrDNo_xFJpX-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="311" y="175" as="sourcePoint" />
+            <mxPoint x="504" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.289;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="181.99899999999974" y="1065" as="sourcePoint" />
+            <mxPoint x="182.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-13" value="User &lt;br&gt;logged in?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="464" y="145" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-13" target="wnAe5tIJQnrDNo_xFJpX-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="501" y="465" as="sourcePoint" />
+            <mxPoint x="551" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-16" value="User enters their internal credentials" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="510" y="245" width="71" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-17" value="IdP confirms the valid session and sends a sign in request to Curinos Okta" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="444" y="322.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-13" target="wnAe5tIJQnrDNo_xFJpX-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="331" y="495" as="sourcePoint" />
+            <mxPoint x="381" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-16" target="wnAe5tIJQnrDNo_xFJpX-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="331" y="495" as="sourcePoint" />
+            <mxPoint x="381" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-20" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Yes&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="441" y="205" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-21" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;No&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="515.5" y="195" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-22" value="Okta validates the request based on configured certificate and urls" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="235" y="322.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-17" target="wnAe5tIJQnrDNo_xFJpX-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="371" y="535" as="sourcePoint" />
+            <mxPoint x="421" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-24" value="" style="endArrow=none;html=1;rounded=0;entryX=0.998;entryY=0.087;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.087;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="45.004999999999995" as="sourcePoint" />
+            <mxPoint x="589.8179999999998" y="45.004999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-25" value="Username exists?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="255" y="405" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-22" target="wnAe5tIJQnrDNo_xFJpX-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="291" y="625" as="sourcePoint" />
+            <mxPoint x="341" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-25" target="wnAe5tIJQnrDNo_xFJpX-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="331" y="775" as="sourcePoint" />
+            <mxPoint x="351" y="695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-28" value="Okta creates user using JIT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="302" y="495" width="91" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;No&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="302" y="455" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-25" target="wnAe5tIJQnrDNo_xFJpX-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="221" y="775" as="sourcePoint" />
+            <mxPoint x="295" y="795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-28" target="wnAe5tIJQnrDNo_xFJpX-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261" y="775" as="sourcePoint" />
+            <mxPoint x="315" y="815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-32" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Yes&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="232" y="455" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-33" value="Okta redirects the user&#39;s browser to the correct app based on the Relay State" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="236" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-34" value="Foundation app login page verifies a matching user exists in user management" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="28" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-33" target="wnAe5tIJQnrDNo_xFJpX-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261" y="775" as="sourcePoint" />
+            <mxPoint x="311" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-36" value="User exists &lt;br&gt;with SSO &lt;br&gt;flag on?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="37.5" y="780" width="100" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-34" target="wnAe5tIJQnrDNo_xFJpX-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="162" y="855" as="sourcePoint" />
+            <mxPoint x="212" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-38" value="App stays on sign in page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="99" y="920" width="73" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-36" target="wnAe5tIJQnrDNo_xFJpX-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="252" y="845" as="sourcePoint" />
+            <mxPoint x="302" y="795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-40" value="User is signed in to the app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="9" y="920" width="78" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-36" target="wnAe5tIJQnrDNo_xFJpX-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="252" y="845" as="sourcePoint" />
+            <mxPoint x="302" y="795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-42" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Yes&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="9" y="855" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-43" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;No&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="105.5" y="855" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-47" target="wnAe5tIJQnrDNo_xFJpX-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-47" value="Request contains Relay State?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="250" y="565" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wnAe5tIJQnrDNo_xFJpX-1" source="wnAe5tIJQnrDNo_xFJpX-47" target="wnAe5tIJQnrDNo_xFJpX-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="272" y="725" as="sourcePoint" />
+            <mxPoint x="322" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-49" value="User is directed to Curinos Okta landing page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="236" y="795" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-50" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Yes&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="250" y="665" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-53" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;No&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry x="322" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-44" value="&lt;b&gt;IdP Initiated SSO Process (SAML2 only)&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="288" y="20" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wnAe5tIJQnrDNo_xFJpX-45" value="" style="endArrow=none;html=1;rounded=0;entryX=0.695;entryY=0;entryDx=0;entryDy=0;exitX=0.697;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="wnAe5tIJQnrDNo_xFJpX-1" target="wnAe5tIJQnrDNo_xFJpX-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530.002" y="1145" as="sourcePoint" />
+            <mxPoint x="530.21" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
